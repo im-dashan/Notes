@@ -4,7 +4,7 @@
 
 ### 一、下载[`Maven`](https://maven.apache.org/download.cgi#)
 
-![](https://github.com/im-dashan/Notes/DS_Installation/raw/master/Images/Maven-Images/2021-09-09_185016.png)
+![](https://raw.githubusercontent.com/im-dashan/Notes/main/DS_Installation/Images/Maven-Images/2021-09-09_185016.png)
 
 <br>
 
@@ -15,7 +15,7 @@
 - 解压`Maven`，推荐解压到`D:`盘
 - 解压后建议重命名文件夹`Maven-版本号`
   - 解压文件夹下一级就是`Maven`文件，不要再嵌套一个文件夹
-  - ![](https://github.com/im-dashan/Notes/DS_Installation/raw/master/Images/Maven-Images/2021-09-09_185844.png)
+  - ![](https://raw.githubusercontent.com/im-dashan/Notes/main/DS_Installation/Images/Maven-Images/2021-09-09_185844.png)
 
 <br>
 
@@ -26,8 +26,8 @@
 - 在系统变量配置`MAVEN_HOME`变量，然后再`Path`中加入`MAVEN_HOME`变量
 
   - 变量值为解压的`Maven`路径
-  - ![](https://github.com/im-dashan/Notes/DS_Installation/raw/master/Images/Maven-Images/2021-09-09_190737.png)
-  - ![](https://github.com/im-dashan/Notes/DS_Installation/raw/master/Images/Maven-Images/2021-09-09_190819.png)
+  - ![](https://raw.githubusercontent.com/im-dashan/Notes/main/DS_Installation/Images/Maven-Images/2021-09-09_190737.png)
+  - ![](https://raw.githubusercontent.com/im-dashan/Notes/main/DS_Installation/Images/Maven-Images/2021-09-09_190819.png)
     - 依次点击确定，完成`Maven`环境变量配置
 
 - 验证`Maven`环境变量是否安装成功
@@ -55,11 +55,11 @@
 
 ### 四、配置`Maven`
 
-- 在`\Maven-3.8.2\`目录下创建存放`jar包`的本地仓库文件夹
+- 在`\Maven-x.x.x\`目录下创建存放`jar包`的本地仓库文件夹
 
-  - `Warehouse`本地仓库文件夹
+  - `repository`本地仓库文件夹
 
-- 找到`\Maven-3.8.2\conf\settings.xml`文件，配置`settings.xml文件`
+- 找到`\Maven-x.x.x\conf\settings.xml`文件，配置`settings.xml文件`
 
 - 只需要替换`xml头文件` `本地仓库地址` `jdk版本`然后覆盖解压的`settings.xml`文件即可
 
@@ -125,11 +125,11 @@
 ### 五、在`IDEA`中配置`Maven`
 
 - 打开`IDEA`选择`File`→`Settings`→`maven`
-  - ![](https://github.com/im-dashan/Notes/DS_Installation/raw/master/Images/Maven-Images/2021-09-13_204719.png)
+  - ![](https://raw.githubusercontent.com/im-dashan/Notes/main/DS_Installation/Images/Maven-Images/2021-09-13_204719.png)
 
 - 双击`Maven`打开`Maven`子菜单，选择`lmporting`
   - 打钩的地方勾选上
-  - ![](https://github.com/im-dashan/Notes/DS_Installation/raw/master/Images/Maven-Images/2021-09-13_205333.png)
+  - ![](https://raw.githubusercontent.com/im-dashan/Notes/main/DS_Installation/Images/Maven-Images/2021-09-13_205333.png)
 
 - 选择`Runner`
 
@@ -139,9 +139,9 @@
       -Xms128m -Xmx512m -Duser.language=zh -Dfile.encoding=UTF-8
       ```
 
-    - ![](https://github.com/im-dashan/Notes/DS_Installation/raw/master/Images/Maven-Images/2021-09-13_205537.png)
+    - ![](https://raw.githubusercontent.com/im-dashan/Notes/main/DS_Installation/Images/Maven-Images/2021-09-13_205537.png)
 
 - 选择`Repositories`
   
   - 选择仓库地址后点击`Update`，到这里就配置完成了
-  - ![](https://github.com/im-dashan/Notes/DS_Installation/raw/master/Images/Maven-Images/2021-09-12_174547.png)
+  - ![](https://raw.githubusercontent.com/im-dashan/Notes/main/DS_Installation/Images/Maven-Images/2021-09-12_174547.png)
