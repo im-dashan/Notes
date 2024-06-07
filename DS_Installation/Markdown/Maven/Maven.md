@@ -66,55 +66,64 @@
   - `settings.xml`
 
   - ```xml
-    <!-- 头文件 -->
     <?xml version="1.0" encoding="UTF-8"?>
     <settings xmlns="http://maven.apache.org/SETTINGS/1.2.0"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.2.0 https://maven.apache.org/xsd/settings-1.2.0.xsd">
+      
+      <!-- 配置本地仓库路径 -->
+      <localRepository>D:\environment\maven-3.9.7\repository</localRepository>
     
-        <!-- 本地仓库地址 -->
-        <localRepository>D:\xxxxxx\Maven-x.x.x\repository</localRepository>
+      <pluginGroups></pluginGroups>
+      <proxies></proxies>
+      <servers></servers>
+      <!-- 配置下载源 -->
+      <mirrors>
+        <mirror>
+          <id>aliyun-central</id>
+          <mirrorOf>central</mirrorOf>
+          <name>Aliyun Maven Central</name>
+          <url>https://maven.aliyun.com/repository/public</url>
+        </mirror>
+        <mirror>
+          <id>huawei-central</id>
+          <mirrorOf>central</mirrorOf>
+          <name>Huawei Maven Central</name>
+          <url>https://repo.huaweicloud.com/repository/maven/</url>
+        </mirror>
+        <mirror>
+          <id>tencent-central</id>
+          <mirrorOf>central</mirrorOf>
+          <name>Tencent Maven Central</name>
+          <url>https://mirrors.cloud.tencent.com/nexus/repository/maven-public/</url>
+        </mirror>
+      </mirrors>
     
-        <!-- 插件组 -->
-        <pluginGroups></pluginGroups>
-    
-        <!-- 通过代理访问外部库 Servers：集成认证服务 -->
-        <proxies></proxies>
-        <servers></servers>
-    
-        <!-- 镜像库，可以指定内部中心库 -->
-        <mirrors>
-    		<!-- 阿里云仓库地址 -->
-            <mirror>
-                <id>aliyunmaven</id>
-                <mirrorOf>central</mirrorOf>
-                <name>阿里云公共仓库</name>
-                <url>https://maven.aliyun.com/repository/public</url>
-            </mirror>
-    		<!-- 官方仓库地址 -->
-            <mirror>
-                <id>mavenCentral</id>
-                <mirrorOf>central</mirrorOf>
-                <name>mavenCentral</name>
-                <url>https://repo.maven.apache.org/maven2/</url>
-            </mirror>
-        </mirrors>
-    
-        <!--个性配置，需要在Activation标签中激活 -->
-        <profiles>
-            <profile>
-                <id>jdk-11</id>
-                <activation>
-                    <activeByDefault>true</activeByDefault>
-                    <jdk>11</jdk>
-                </activation>
-                <properties>
-                    <maven.compiler.source>11</maven.compiler.source>
-                    <maven.compiler.target>11</maven.compiler.target>
-                    <maven.compiler.compilerVersion>11</maven.compiler.compilerVersion>
-                </properties>
-            </profile>
-        </profiles>
+      <profiles>
+        <!-- 配置并行下载 -->
+        <profile>
+          <id>parallel-download</id>
+          <activation>
+            <activeByDefault>true</activeByDefault>
+          </activation>
+          <properties>
+            <maven.artifact.threads>5</maven.artifact.threads>
+          </properties>
+        </profile>
+        <!-- 配置jdk版本 -->>
+        <profile>
+          <id>jdk-21</id>
+          <activation>
+            <activeByDefault>true</activeByDefault>
+            <jdk>21</jdk>
+          </activation>
+          <properties>
+            <maven.compiler.source>21</maven.compiler.source>
+            <maven.compiler.target>21</maven.compiler.target>
+            <maven.compiler.release>21</maven.compiler.release>
+          </properties>
+        </profile>
+      </profiles>
     </settings>
     ```
 
