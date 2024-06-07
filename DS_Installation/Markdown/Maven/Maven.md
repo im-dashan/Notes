@@ -110,7 +110,7 @@
             <maven.artifact.threads>5</maven.artifact.threads>
           </properties>
         </profile>
-        <!-- 配置jdk版本 -->>
+        <!-- 配置jdk版本 -->
         <profile>
           <id>jdk-21</id>
           <activation>
