@@ -23,16 +23,15 @@
 - [Python官网下载地址](https://www.python.org/downloads/release/python-395/)
 - [get-pip.py官网下载地址](https://bootstrap.pypa.io/get-pip.py)
 - [Samloader工具GiHub开源地址](https://github.com/nlscc/samloader)
-- 爱折腾的搞机友可以自己官网下载。【[蓝奏云](https://dashan3.lanzoui.com/iy2SApn1ove)】下载解压可获得以上全部
 
-![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/DOS下载三星固件/image_0.png)
+![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/Images/DOS下载三星固件/image_0.png)
 
 <br>
 
 - [三星驱动下载地址可以参考上一篇教程](https://github.com/Dashan-37/PP_Tutorial/blob/master/Markdown/Uninstall_Markdown/Uninstall.md)
 
 <br>
-
+iza卸载
 <br>
 
 ### 二、python安装及配置
@@ -41,18 +40,18 @@
 
 - 用`这里恩恩` 提供的下载地址解压获得以下内容：
 
-![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/DOS下载三星固件/image_1.png)
+![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/Images/DOS下载三星固件/image_1.png)
 
 <br>
 
 - 解压`python-3.9.5-embed-amd64.zip`到`D:`盘（推荐）
 - 如图：
 
-![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/DOS下载三星固件/image_2.png)
+![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/Images/DOS下载三星固件/image_2.png)
 
-![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/DOS下载三星固件/image_3.png)
+![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/Images/DOS下载三星固件/image_3.png)
 
-![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/DOS下载三星固件/image_4.png)
+![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/Images/DOS下载三星固件/image_4.png)
 
 <br>
 
@@ -64,13 +63,13 @@
 
 - 系统变量中配置`Python`
 
-![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/DOS下载三星固件/image_5.png)
+![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/Images/DOS下载三星固件/image_5.png)
 
 <br>
 
 - 系统`Path`变量中配置`Python`变量：
 
-![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/DOS下载三星固件/image_6.png)
+![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/Images/DOS下载三星固件/image_6.png)
 
 - 完成**第一步**环境变量配置。
 
@@ -82,7 +81,7 @@
 
 ###  三、修改python39.pth文件
 
-![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/DOS下载三星固件/image_7.png)
+![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/Images/DOS下载三星固件/image_7.png)
 
 <br>
 
@@ -92,13 +91,13 @@
 
 ### 四、安装get-pip.py
 
-![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/DOS下载三星固件/image_8.png)
+![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/Images/DOS下载三星固件/image_8.png)
 
 <br>
 
 - 把文件`get-pip.py`复制到`python-3.9`文件夹根目录中，该地址下运行`cmd`
 
-![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/DOS下载三星固件/image_9.png)
+![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/Images/DOS下载三星固件/image_9.png)
 
 <br>
 
@@ -111,26 +110,26 @@ cmd窗口输入
 python get-pip.py
 ```
 
-![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/DOS下载三星固件/image_10.png)
+![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/Images/DOS下载三星固件/image_10.png)
 
 <br>
 
 - 出现如下命令说明安装pip成功，现在`python-3.9`根目录多了两个文件夹，如图：
 
 
-![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/DOS下载三星固件/image_11.png)
+![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/Images/DOS下载三星固件/image_11.png)
 
 <br>
 
 -  在配置文件`python39._pth`中用记事本打开加入`Lib\site-packages`如图：
 
-![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/DOS下载三星固件/image_12.png)
+![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/Images/DOS下载三星固件/image_12.png)
 
 <br>
 
 - 把`Scripts`文件夹配置到`Path`变量中
 
-![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/DOS下载三星固件/image_13.png)
+![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/Images/DOS下载三星固件/image_13.png)
 
 - 环境变量配置完毕 
 
@@ -143,13 +142,13 @@ python get-pip.py
 
 ### 五、安装`samloader-master`
 
-![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/DOS下载三星固件/image_14.png)
+![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/Images/DOS下载三星固件/image_14.png)
 
 <br>
 
 - 解压`samloader-master.zip`，解压地址下运行`cmd`
 
-![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/DOS下载三星固件/image_15.png) 
+![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/Images/DOS下载三星固件/image_15.png) 
 
 <br>
 
@@ -162,7 +161,7 @@ python setup.py install
 如图：
 ```
 
-![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/DOS下载三星固件/image_16.png)
+![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/Images/DOS下载三星固件/image_16.png)
 
 `到这里环境已经搭建完毕，可以通过任意位置打开cmd用命令来获取任意的三星固件了`
 
@@ -251,5 +250,5 @@ samloader -m SM-G9910 -r CHC decrypt -v G9910ZCU2AUDD/G9910CHC2AUDD/G9910ZCU2AUE
 - 推荐桌面创建`ROM文件夹`，在`ROM文件夹根目录`运行`cmd`，这样下载的固件就在`ROM`文件夹下
 - 用`Galaxy S21 SM-G9910` 作为演示机型，注意变通
 
-![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/DOS下载三星固件/image_17.png) 
+![图片加载失败，请使用vpn打开网址！！！](https://github.com/im-dashan/Notes/raw/main/玩机技巧/Images/DOS下载三星固件/image_17.png) 
 
