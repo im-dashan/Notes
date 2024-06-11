@@ -28,10 +28,9 @@
 
 <br>
 
-- [三星驱动下载地址可以参考上一篇教程](https://github.com/Dashan-37/PP_Tutorial/blob/master/Markdown/Uninstall_Markdown/Uninstall.md)
+- [三星驱动下载地址可以参考上一篇教程](https://github.com/im-dashan/Notes/blob/main/玩机技巧/安卓卸载内置软件.md)
 
 <br>
-iza卸载
 <br>
 
 ### 二、python安装及配置
@@ -55,7 +54,7 @@ iza卸载
 
 <br>
 
-[配置环境变量这里简单说一下，具体详细步骤参考第一篇文章](https://github.com/Dashan-37/PP_Tutorial/blob/master/Markdown/Uninstall_Markdown/Uninstall.md) 
+[配置环境变量这里简单说一下，具体详细步骤参考第一篇文章](https://github.com/im-dashan/Notes/blob/main/玩机技巧/安卓卸载内置软件.md) 
 
 <br>
 
