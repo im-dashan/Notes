@@ -6,13 +6,13 @@ Windows下安装和配置Git
 
 - 选择版本，这里以Windows版本为例
 
-![2021-07-27_201226.png](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/Git-Images/2021-07-27_201226.png)	
+![2021-07-27_201226.png](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/Git/2021-07-27_201226.png)	
 
 - 选择操作系统位数这里以`64-bit`为例，
   - 这里推荐`标准版`，也以`标准版`为例
   - ①`标准版`、②`精简版`
 
-![2021-07-27_201611.png](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/Git-Images/2021-07-27_201611.png)
+![2021-07-27_201611.png](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/Git/2021-07-27_201611.png)
 
 <br>
 
@@ -57,7 +57,7 @@ Windows下安装和配置Git
 
     - 登录`GitHub`→`Settings`→`SSH and GPG keys`→`New SSH key`
     - 用`txt`打开`id_rsa.pub`全选复制，到`New SSH key`粘贴
-      - ![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/Git-Images/2021-09-08_200305.png)
+      - ![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/Git/2021-09-08_200305.png)
 
   - ```shell
     # 测试配置是否成功
@@ -91,16 +91,16 @@ Windows下安装和配置Git
 
 ### 四、安装`Git`图形化界面[`TortoiseGit`](https://tortoisegit.org/download/)
 
-![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/Git-Images/2021-09-08_201737.png)
+![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/Git/2021-09-08_201737.png)
 
-![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/Git-Images/2021-09-08_201837.png)
+![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/Git/2021-09-08_201837.png)
 
 - 安装步骤先安装`TortoiseGit`再安装`TortoiseGit汉化包`
   - `TortoiseGit`安装除了选择安装路径其他一概默认配置，一直往下点直到安装完毕
   - `TortoiseGit汉化包`，一直往下点直到安装完毕
   - 选择中文语言
     - 鼠标右键选择`TortoiseGit(T)`→`Settings`→`简体中文`
-    - ![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/Git-Images/2021-09-08_202955.png)
+    - ![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/Git/2021-09-08_202955.png)
 
 <br>
 
@@ -110,7 +110,7 @@ Windows下安装和配置Git
 
 - 鼠标右键选择`TortoiseGit(T)`→`Settings`→`网络`
   - 选择`Git`安装目录下的`Git\usr\bin\ssh.exe`
-  - ![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/Git-Images/2021-09-08_203258.png)
+  - ![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/Git/2021-09-08_203258.png)
 - 创建版本库
   - 在你想要`Git`的文件夹创建版本库，你就可以同步&拉取远程仓库的文件代码了
     - 鼠标右键→`Git在这里创建版本库(Y)`
@@ -119,6 +119,6 @@ Windows下安装和配置Git
   - `URL`和`推送URL`里填写你`GitHub`的仓库`SSH`路径
   - `Putty密匙`填写`Git`生成的密匙文件`id_rsa`
     - 路径`C:\Users\用户名\.ssh\id_rsa`
-  - ![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/Git-Images/2021-09-08_204237.png)
+  - ![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/Git/2021-09-08_204237.png)
 
 ***这样你就可以在这个文件夹中存放需要同步和拉取的文件了***

@@ -4,7 +4,7 @@
 
 ### 一、下载[`Tomcat`](https://tomcat.apache.org/download-90.cgi)
 
-![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/Tomcat-Images/2021-09-19_170056.png)
+![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/Tomcat/2021-09-19_170056.png)
 
 <br>
 
@@ -27,9 +27,9 @@
     %CATALINA_HOME%\bin
     ```
 
-  - ![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/Tomcat-Images/2021-09-19_170703.png)
+  - ![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/Tomcat/2021-09-19_170703.png)
 
-  - ![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/Tomcat-Images/2021-09-19_171301.png)
+  - ![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/Tomcat/2021-09-19_171301.png)
 
   - 依次点击环境变量完成`Tomcat`环境变量配置
 
@@ -84,8 +84,8 @@
 ### 四、`IDEA`中配置`Tomcat`
 
 - 打开`idea`→选择`Edit Configurations...`
-  - ![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/Tomcat-Images/2021-09-19_174752.png)
+  - ![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/Tomcat/2021-09-19_174752.png)
 
 - 选择`+`→`Tomcat Server`→`Local`
-  - ![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/Tomcat-Images/2021-09-19_175354.png)
+  - ![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/Tomcat/2021-09-19_175354.png)
 

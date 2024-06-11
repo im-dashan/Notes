@@ -14,7 +14,7 @@
 
 <br>
 
-![下载的文件](https://github.com/Dashan-IZ/Notes/raw/master/Images/Linux_Install_Images/RabbitMQ_Install_Images/2021-08-02_202334.png)
+![下载的文件](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/RabbitMQ/2021-08-02_202334.png)
 
 <br>
 

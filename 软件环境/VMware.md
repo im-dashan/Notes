@@ -6,13 +6,13 @@
 
 - 打开编辑→虚拟网络编辑器
 
-![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/VMware-Images/2021-09-19_131631.png)
+![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/VMware/2021-09-19_131631.png)
 
-![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/VMware-Images/2021-09-19_132502.png)
+![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/VMware/2021-09-19_132502.png)
 
 - 选择`NAT`设置，设置网关
 
-![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/VMware-Images/2021-09-19_134023.png)
+![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/VMware/2021-09-19_134023.png)
 
 <br>
 

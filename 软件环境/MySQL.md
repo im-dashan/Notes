@@ -4,9 +4,9 @@
 
 ### 一、下载[`MySQL`](https://dev.mysql.com/downloads/)
 
-![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/MySQL-Images/2021-09-08_180121.png)
+![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/MySQL/2021-09-08_180121.png)
 
-![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/MySQL-Images/2021-09-08_180620.png)
+![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/MySQL/2021-09-08_180620.png)
 
 <br>
 
@@ -14,7 +14,7 @@
 
 ### 二、解压`MySQL`到安装目录
 
-![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/MySQL-Images/2021-09-08_181220.png)
+![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/MySQL/2021-09-08_181220.png)
 
 <br>
 
@@ -44,7 +44,7 @@ mysqld --install
 Service successfully installed.
 ```
 
-![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/MySQL-Images/2021-09-08_184327.png)
+![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/MySQL/2021-09-08_184327.png)
 
 <br>
 
@@ -68,7 +68,7 @@ D:\Development_Environment\MySQL\bin>mysqld --initialize --console
 2021-09-08T10:32:36.741459Z 6 [Note] [MY-010454] [Server] A temporary password is generated for root@localhost: AZgs>Ll3;QRQ
 ```
 
-![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/MySQL-Images/2021-09-08_183310.png)
+![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/MySQL/2021-09-08_183310.png)
 
 <br>
 
@@ -86,7 +86,7 @@ MySQL 服务正在启动 .
 MySQL 服务已经启动成功。
 ```
 
-![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/MySQL-Images/2021-09-08_184441.png)
+![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/MySQL/2021-09-08_184441.png)
 
 <br>
 
@@ -120,7 +120,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql>
 ```
 
-![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/MySQL-Images/2021-09-08_185609.png)
+![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/MySQL/2021-09-08_185609.png)
 
 <br>
 
@@ -139,7 +139,7 @@ Query OK, 0 rows affected (0.02 sec)
 mysql>
 ```
 
-![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/MySQL-Images/2021-09-08_190000.png)
+![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/MySQL/2021-09-08_190000.png)
 
 ***到这里`mysql`就配置完成了***
 
@@ -151,11 +151,11 @@ mysql>
 
 `系统变量下配置MySQL`
 
-![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/MySQL-Images/2021-09-08_190544.png)
+![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/MySQL/2021-09-08_190544.png)
 
 `在Path中添加系统变量MySQL`
 
-![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/MySQL-Images/2021-09-08_191051.png)
+![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/MySQL/2021-09-08_191051.png)
 
 ***依次点击确定完成`MySQL`安装***
 
@@ -169,7 +169,7 @@ mysql>
 - 由于找不到`VCRUNTIME140_1.dll`，无法继续执行代码。重新安装程序可能会解决此问题
   - **解决办法**
     - 系统缺少[`Visual C++`](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0)，安装完成后即可解决问题
-    - ![](https://github.com/Dashan-IZ/DS_Installation/raw/master/Images/MySQL-Images/2021-09-08_191723.png)
+    - ![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/MySQL/2021-09-08_191723.png)
 
 <br>
 
