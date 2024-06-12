@@ -61,7 +61,7 @@ systemctl start firewalld.service
 
 #设置开机启动
 systemctl enable firewalld.service
-systemctl status firewalld
+systemctl status firewalld.service
 
 #错误解决
 sudo apt-get install dbus
