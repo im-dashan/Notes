@@ -1,7 +1,15 @@
-这是一个笔记文档
+- 👋 Hi, I’m @im-dashan
 
-https://github.com/im-dashan/Notes/raw/main/
+- 👀 I’m interested in ...
 
-https://github.com/im-dashan/Notes/raw/main/
+- 🌱 I’m currently learning ...
 
-https://github.com/im-dashan/Notes/raw/main/
+- 💞️ I’m looking to collaborate on ...
+
+- 📫 How to reach me ...
+
+- 😄 Pronouns: ...
+
+- ⚡ Fun fact: ...
+
+- https://github.com/im-dashan/Notes/raw/main/
