@@ -10,6 +10,6 @@
 
 - 😄 Pronouns: ...
 
-- ⚡ Fun fact: ...。。。。
+- ⚡ Fun fact: ...
 
 - https://github.com/im-dashan/Notes/raw/main/
