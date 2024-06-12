@@ -189,3 +189,104 @@ mysql>
         net start mysql
         ```
 
+
+
+
+
+
+
+# `MySQL`安装教程-`Linux`
+
+
+
+下载`MySQL` `Linux`通用版本
+
+```sh
+wget https://dev.mysql.com/get/Downloads/MySQL-8.4/mysql-8.4.0-linux-glibc2.28-x86_64.tar.xz
+```
+
+从`/home`文件夹解压文件到`/usr/local`
+
+```sh
+tar -xvf mysql-8.0.36-linux-glibc2.28-x86_64.tar.xz -C /usr/local/
+```
+
+重命名解压文件夹
+
+```sh
+mv  mysql-8.4.0-linux-glibc2.28-x86_64/ mysql-8.4.0
+```
+
+在`mysql-8.4.0`文件夹创建`data`文件夹
+
+```sh
+mkdir data
+```
+
+进入`mysql-8.4.0/bin`文件夹运行
+
+```sh
+useradd mysql
+```
+
+初始化数据库，此步骤会生成数据库`初始密码`记得保存
+
+```sh
+./mysqld --initialize --user=mysql --datadir=/usr/local/mysql-8.4.0/data --basedir=/usr/local/mysql-8.4.0
+```
+
+生成如下内容，密码是`7LMsd(r_(lP.`
+
+```sh
+root@localhost: 7LMsd(r_(lP.
+```
+
+进入安装目录的上级`/usr/local`修改安装文件夹权限
+
+```sh
+chown -R mysql:mysql /usr/local/mysql-8.4.0/
+```
+
+启动数据库
+
+```sh
+./mysqld_safe &
+```
+
+登入数据库
+
+```sh
+./mysql -u root -p
+```
+
+输入数据库初始密码
+
+```sh
+7LMsd(r_(lP.
+```
+
+修改用户 `root` 在 `localhost` 上的密码为 `hexi1998`。
+
+```sh
+alter user 'root'@'localhost' identified by 'hexi1998';
+```
+
+创建一个用户名为 `root` 的用户，并设置密码为 `hexi1998`，该用户可以从任何主机连接到 MySQL 服务器。
+
+```sh
+create user root@'%' identified by 'hexi1998';
+```
+
+赋予用户 `root`（从任何主机连接的）对所有数据库和表的所有权限，并允许该用户将这些权限授予其他用户。
+
+```sh
+grant all privileges on *.* to root@'%' with grant option;
+```
+
+刷新,安装完成
+
+```sh
+flush privileges;
+```
+
+
