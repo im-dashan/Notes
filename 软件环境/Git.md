@@ -1,4 +1,4 @@
-Windows下安装和配置Git
+# Windows下安装和配置Git
 
 ### 一、[下载Git](https://git-scm.com/downloads)
 
@@ -122,3 +122,34 @@ Windows下安装和配置Git
   - ![](https://github.com/im-dashan/Notes/raw/main/软件环境/Images/Git/2021-09-08_204237.png)
 
 ***这样你就可以在这个文件夹中存放需要同步和拉取的文件了***
+
+
+
+
+
+# Git提交代码命令
+
+
+
+```sh
+# 配置 Git 用户信息
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+# 初始化 Git 仓库
+git init
+
+# 添加远程仓库
+git remote add origin https://github.com/yourusername/your-repository.git
+
+# 添加所有
+git add .
+# 添加指定文件
+git add README.md
+git commit -m "提交文件的修改说明"
+
+# 推送到远程仓库
+git push -u origin main
+
+```
+
