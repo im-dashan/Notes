@@ -151,5 +151,21 @@ git commit -m "提交文件的修改说明"
 # 推送到远程仓库
 git push -u origin main
 
+# 查看现有远程仓库链接
+git remote -v
+
+# 删除名为 origin 的远程仓库链接
+git remote remove origin
+
+# 添加新的远程仓库链接
+git remote add origin https://new-url.com/yourusername/your-repository.git
+
+# 确认新的远程仓库链接已添加
+git remote -v
+
+# 将名为 origin 的远程仓库的 URL 修改为新的 URL
+git remote set-url origin https://new-url.com/yourusername/your-repository.git
+
+
 ```
 
