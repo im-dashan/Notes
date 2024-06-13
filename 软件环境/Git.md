@@ -146,6 +146,8 @@ git remote add origin https://github.com/yourusername/your-repository.git
 git add .
 # 添加指定文件
 git add README.md
+
+# 添加文件修改说明
 git commit -m "提交文件的修改说明"
 
 # 推送到远程仓库
