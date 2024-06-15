@@ -171,3 +171,95 @@ git remote set-url origin https://new-url.com/yourusername/your-repository.git
 
 ```
 
+如果你想要将本地的提交推送到远程仓库的 `main` 分支（或其他分支），确保你已经在本地分支上做了一些提交。
+
+首先，你可以执行以下命令检查本地分支：
+
+```sh
+git branch
+```
+
+然后切换到你想要推送的分支，假设是 `main` 分支：
+
+```sh
+git checkout main
+```
+
+如果当前分支是空的（即没有提交历史），你需要先进行一些提交：
+
+```sh
+git add .   # 添加所有修改
+git commit -m "Initial commit"  # 提交更改
+```
+
+接着，尝试推送到远程仓库：
+
+```sh
+git push origin main
+```
+
+如果远程仓库中不存在 `main` 分支，你可以通过添加 `-u` 参数来将当前分支关联到远程仓库的 `main` 分支：
+
+```sh
+git push -u origin main
+```
+
+这样就会创建一个新的 `main` 分支，并将本地的提交推送到远程仓库中。
+
+### 完整的删除流程示例
+
+假设你想删除本地和远程分支 `feature-branch`：
+
+1. 切换到 `main` 分支：
+
+   ```
+   bash
+   复制代码
+   git checkout main
+   ```
+
+2. 删除本地分支 `feature-branch`：
+
+   ```
+   bash
+   复制代码
+   git branch -d feature-branch
+   ```
+
+   如果需要强制删除：
+
+   ```
+   bash
+   复制代码
+   git branch -D feature-branch
+   ```
+
+3. 删除远程分支 `feature-branch`：
+
+   ```
+   bash
+   复制代码
+   git push origin --delete feature-branch
+   ```
+
+按照上述步骤操作，就可以成功删除本地和远程的 Git 分支。
+
+### 示例
+
+假设你的项目目录是 `/path/to/your/repository`，你可以使用以下命令：
+
+```
+bash复制代码cd /path/to/your/repository
+rm -rf .git
+ls -a  # 确认 .git 目录已删除
+```
+
+在 Windows 上：
+
+```
+powershell复制代码cd /path/to/your/repository
+Remove-Item -Recurse -Force .git
+dir /a  # 确认 .git 目录已删除
+```
+
+这样操作后，该目录将不再是一个 Git 仓库，你也可以重新运行 `git init` 命令来重新初始化一个新的 Git 仓库。
