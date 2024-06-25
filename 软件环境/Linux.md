@@ -102,3 +102,21 @@ ulimit -n
 
 
 
+Ubuntu换源
+
+```sh
+vim /etc/apt/sources.list
+
+vim /etc/apt/sources.list.d/ubuntu.sources
+```
+
+国内镜像源
+
+```sh
+华为	https://mirrors.huaweicloud.com/	速度 No.1
+清华	https://mirrors.tuna.tsinghua.edu.cn/	速度No.2
+阿里云	https://mirrors.aliyun.com/	速度 NO.3
+网易	https://mirrors.163.com/	速度 No.4
+中科大	https://mirrors.ustc.edu.cn/	速度 No.5
+```
+
