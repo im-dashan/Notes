@@ -120,3 +120,4 @@ vim /etc/apt/sources.list.d/ubuntu.sources
 中科大		https://mirrors.ustc.edu.cn/		速度 No.5
 ```
 
+

@@ -304,3 +304,14 @@ grant all privileges on *.* to root@'%' with grant option;
 flush privileges;
 ```
 
+- 缺少libaio.so.1的解决方案
+
+```sh
+sudo find / -name libaio.so.1t64
+
+ls -l /usr/lib/x86_64-linux-gnu/libaio.so.1t64
+
+sudo ln -s /usr/lib/x86_64-linux-gnu/libaio.so.1t64 /usr/lib/x86_64-linux-gnu/libaio.so.1
+
+```
+
