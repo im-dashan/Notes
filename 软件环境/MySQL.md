@@ -227,6 +227,78 @@ mv  mysql-8.4.0-linux-glibc2.28-x86_64/ mysql-8.4.0
 mkdir data
 ```
 
+- 在`mysql-8.4.0`文件夹创建`logs`文件夹
+
+```sh
+mkdir logs
+```
+
+- 在`logs`文件夹中创建`log`日志文件
+
+```sh
+mysql_error.log
+mysql_slow_queries.log
+```
+
+- 在`mysql-8.4.0`文件夹创建`my.cnf`配置文件
+
+```ini
+[client]
+# 设置mysql客户端连接服务端时默认使用的端口
+port = 6033
+# 设置mysql客户端默认字符集
+default-character-set = utf8mb4
+
+[mysql]
+default-character-set = utf8mb4
+
+[mysqld]
+port = 6033
+# 设置mysql的安装目录
+basedir = /usr/local/mysql-8.4.0
+# 设置mysql数据库的数据的存放目录
+datadir = /usr/local/mysql-8.4.0/data
+# 定义MySQL服务器的Unix套接字文件路径
+socket = /usr/local/mysql-8.4.0/data/mysql.sock
+# 启用MySQL X插件
+mysqlx=ON
+# 定义MySQL X协议的Unix套接字文件路径
+mysqlx_socket=/usr/local/mysql-8.4.0/data/mysqlx.sock
+
+# 允许最大连接数
+max_connections = 800
+# 允许连接失败的次数
+max_connect_errors = 50
+
+# 服务端使用的字符集默认为UTF8
+character-set-server = utf8mb4
+collation-server = utf8mb4_general_ci
+
+# 缓冲区和缓存
+innodb_buffer_pool_size = 2G
+innodb_log_file_size = 512M
+innodb_log_buffer_size = 64M
+innodb_file_per_table = 1
+innodb_flush_log_at_trx_commit = 1
+innodb_flush_method = O_DIRECT
+
+# 临时表和缓存
+tmp_table_size = 256M
+max_heap_table_size = 256M
+table_open_cache = 5000
+table_definition_cache = 5000
+
+# 超时设置
+wait_timeout = 300
+interactive_timeout = 300
+
+# 错误日志记录
+log_error = /usr/local/mysql-8.4.0/logs/mysql_error.log
+slow_query_log = 1
+slow_query_log_file = /usr/local/mysql-8.4.0/logs/mysql_slow_queries.log
+long_query_time = 1
+```
+
 - 进入`mysql-8.4.0/bin`文件夹运行
 
 
