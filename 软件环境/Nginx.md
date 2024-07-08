@@ -57,7 +57,8 @@ make && make install
 `nginx.conf`配置文件
 
 ```sh
-worker_processes  8;
+#user  nobody;
+worker_processes  4;
 events {
     worker_connections  65535;
 }
@@ -76,7 +77,7 @@ http {
 
     server {
         listen 80;
-        server_name  dsone.xyz;
+        server_name  oneds.org;
 
         location / {
             return 301 https://$host$request_uri;
@@ -85,16 +86,16 @@ http {
 
     server {
         listen 443 quic reuseport;
-        # listen [::]:443 quic reuseport;
+        listen [::]:443 quic reuseport;
         listen 443 ssl;
-        # listen [::]:443 ssl;
+        listen [::]:443 ssl;
         http2 on;
 
-        server_name  dsone.xyz;
+        server_name  oneds.org;
 
-        ssl_certificate      /etc/letsencrypt/live/dsone.xyz/fullchain.pem;
-        ssl_certificate_key  /etc/letsencrypt/live/dsone.xyz/privkey.pem;
-        ssl_trusted_certificate /etc/letsencrypt/live/dsone.xyz/chain.pem;
+        ssl_certificate      /etc/letsencrypt/live/oneds.org/fullchain.pem;
+        ssl_certificate_key  /etc/letsencrypt/live/oneds.org/privkey.pem;
+        ssl_trusted_certificate /etc/letsencrypt/live/oneds.org/chain.pem;
 
         quic_retry on;
         ssl_early_data on;
@@ -111,60 +112,12 @@ http {
         location / {
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
             proxy_set_header X-Forwarded-Proto $scheme;
-            proxy_set_header Host $http_host;
+            proxy_set_header Host $host:$server_port;
             proxy_set_header X-Real-IP $remote_addr;
             proxy_set_header Range $http_range;
-            proxy_set_header If-Range $http_if_range;
+	        proxy_set_header If-Range $http_if_range;
             proxy_redirect off;
-            proxy_pass http://localhost:6244;
-            client_max_body_size 20000m;
-        }
-    }
-
-
-    server {
-        listen 80;
-        server_name  yyds.cam;
-
-        location / {
-            return 301 https://$host$request_uri;
-        }
-    }
-
-    server {
-        listen 443 quic;
-        # listen [::]:443 quic;
-        listen 443 ssl;
-        # listen [::]:443 ssl;
-        http2 on;
-
-        server_name  yyds.cam;
-
-        ssl_certificate      /etc/letsencrypt/live/yyds.cam/fullchain.pem;
-        ssl_certificate_key  /etc/letsencrypt/live/yyds.cam/privkey.pem;
-        ssl_trusted_certificate /etc/letsencrypt/live/yyds.cam/chain.pem;
-
-        quic_retry on;
-        ssl_early_data on;
-        ssl_prefer_server_ciphers off;
-        ssl_protocols TLSv1.2 TLSv1.3;
-        ssl_ecdh_curve X25519:secp256r1;
-        ssl_session_cache    shared:SSL:10m;
-        ssl_session_timeout  10m;
-        ssl_ciphers 'ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384';
-
-        add_header Alt-Svc 'h3-29=":443"; ma=86400';
-        add_header Strict-Transport-Security "max-age=63072000; includeSubdomains; preload" always;
-
-        location / {
-            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-            proxy_set_header X-Forwarded-Proto $scheme;
-            proxy_set_header Host $http_host;
-            proxy_set_header X-Real-IP $remote_addr;
-            proxy_set_header Range $http_range;
-            proxy_set_header If-Range $http_if_range;
-            proxy_redirect off;
-            proxy_pass http://localhost:7244;
+            proxy_pass http://localhost:5244;
             client_max_body_size 20000m;
         }
     }
@@ -180,9 +133,9 @@ http {
 
     server {
         listen 443 quic;
-        # listen [::]:443;
+        listen [::]:443 quic;
         listen 443 ssl;
-        # listen [::]:443 ssl;
+        listen [::]:443 ssl;
         http2 on;
 
         server_name  iasmr.xyz;
@@ -206,12 +159,12 @@ http {
         location / {
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
             proxy_set_header X-Forwarded-Proto $scheme;
-            proxy_set_header Host $http_host;
+            proxy_set_header Host $host:$server_port;
             proxy_set_header X-Real-IP $remote_addr;
             proxy_set_header Range $http_range;
-            proxy_set_header If-Range $http_if_range;
+	        proxy_set_header If-Range $http_if_range;
             proxy_redirect off;
-            proxy_pass http://localhost:5244;
+            proxy_pass http://localhost:6244;
             client_max_body_size 20000m;
         }
     }
