@@ -129,12 +129,13 @@
 
 # Git提交代码命令
 
+- git信息配置
 
 
 ```sh
 # 配置 Git 用户信息
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
+git config --global user.name "github Name"
+git config --global user.email "github.email@example.com"
 
 # 初始化 Git 仓库
 git init
@@ -142,19 +143,28 @@ git init
 # 添加远程仓库
 git remote add origin https://github.com/yourusername/your-repository.git
 
-# 添加所有
-git add .
-# 添加指定文件
-git add README.md
-
-# 添加文件修改说明
-git commit -m "提交文件的修改说明"
-
-# 推送到远程仓库
-git push -u origin main
+# 检查本地分支
+git branch
 
 # 查看现有远程仓库链接
 git remote -v
+```
+
+- git配置拓展
+
+
+```sh
+# 切换到main分支
+git checkout main
+
+# 创建并切换到 main 分支
+git checkout -b main
+
+# 删除本地的 master 分支
+git branch -d master
+
+# 删除远程的 master 分支
+git push origin --delete master
 
 # 删除名为 origin 的远程仓库链接
 git remote remove origin
@@ -162,200 +172,26 @@ git remote remove origin
 # 添加新的远程仓库链接
 git remote add origin https://new-url.com/yourusername/your-repository.git
 
-# 确认新的远程仓库链接已添加
-git remote -v
-
 # 将名为 origin 的远程仓库的 URL 修改为新的 URL
 git remote set-url origin https://new-url.com/yourusername/your-repository.git
-
-
 ```
 
-如果你想要将本地的提交推送到远程仓库的 `main` 分支（或其他分支），确保你已经在本地分支上做了一些提交。
-
-首先，你可以执行以下命令检查本地分支：
+- git提交
 
 ```sh
-git branch
-```
-
-然后切换到你想要推送的分支，假设是 `main` 分支：
-
-```sh
-git checkout main
-```
-
-如果当前分支是空的（即没有提交历史），你需要先进行一些提交：
-
-```sh
-git add .   # 添加所有修改
-git commit -m "Initial commit"  # 提交更改
-```
-
-接着，尝试推送到远程仓库：
-
-```sh
-git push origin main
-```
-
-如果远程仓库中不存在 `main` 分支，你可以通过添加 `-u` 参数来将当前分支关联到远程仓库的 `main` 分支：
-
-```sh
-git push -u origin main
-```
-
-这样就会创建一个新的 `main` 分支，并将本地的提交推送到远程仓库中。
-
-### 完整的删除流程示例
-
-假设你想删除本地和远程分支 `feature-branch`：
-
-1. 切换到 `main` 分支：
-
-   ```
-   bash
-   复制代码
-   git checkout main
-   ```
-
-2. 删除本地分支 `feature-branch`：
-
-   ```
-   bash
-   复制代码
-   git branch -d feature-branch
-   ```
-
-   如果需要强制删除：
-
-   ```
-   bash
-   复制代码
-   git branch -D feature-branch
-   ```
-
-3. 删除远程分支 `feature-branch`：
-
-   ```
-   bash
-   复制代码
-   git push origin --delete feature-branch
-   ```
-
-按照上述步骤操作，就可以成功删除本地和远程的 Git 分支。
-
-### 示例
-
-假设你的项目目录是 `/path/to/your/repository`，你可以使用以下命令：
-
-```
-bash复制代码cd /path/to/your/repository
-rm -rf .git
-ls -a  # 确认 .git 目录已删除
-```
-
-在 Windows 上：
-
-```
-powershell复制代码cd /path/to/your/repository
-Remove-Item -Recurse -Force .git
-dir /a  # 确认 .git 目录已删除
-```
-
-这样操作后，该目录将不再是一个 Git 仓库，你也可以重新运行 `git init` 命令来重新初始化一个新的 Git 仓库。
-
-
-
-创建并切换到 `main` 分支可以通过以下步骤完成：
-
-### 1. 创建并切换到 `main` 分支
-
-如果你的仓库还没有 `main` 分支，你可以使用以下命令来创建并切换到 `main` 分支：
-
-```
-bash
-复制代码
-git checkout -b main
-```
-
-这将创建一个新的 `main` 分支并切换到该分支。
-
-### 2. 推送 `main` 分支到远程仓库
-
-如果你希望将这个新创建的 `main` 分支推送到远程仓库并设置为默认分支，可以使用以下命令：
-
-```
-bash
-复制代码
-git push -u origin main
-```
-
-### 3. 将远程仓库的默认分支设置为 `main`
-
-如果你在 GitHub 或其他 Git 托管平台上想将默认分支设置为 `main`，可以按照以下步骤操作：
-
-- **GitHub**：
-  1. 登录到 GitHub 并导航到你的仓库。
-  2. 点击 `Settings`。
-  3. 在左侧菜单中选择 `Branches`。
-  4. 在 `Default branch` 部分，选择 `main` 作为默认分支。
-  5. 保存更改。
-- **GitLab**：
-  1. 登录到 GitLab 并导航到你的项目。
-  2. 点击 `Settings` -> `Repository`。
-  3. 在 `Default branch` 部分，选择 `main` 作为默认分支。
-  4. 保存更改。
-
-### 4. 删除旧的默认分支（如果需要）
-
-如果之前有其他默认分支（比如 `master`），并且你不再需要它，可以删除该分支：
-
-首先切换到 `main` 分支（如果还没有切换）：
-
-```
-bash
-复制代码
-git checkout main
-```
-
-然后删除本地的旧分支：
-
-```
-bash
-复制代码
-git branch -d master
-```
-
-最后，删除远程的旧分支：
-
-```
-bash
-复制代码
-git push origin --delete master
-```
-
-### 完整示例
-
-以下是一个完整的例子，假设你正在创建并切换到 `main` 分支，并推送到远程仓库：
-
-```
-bash复制代码# 创建并切换到 main 分支
-git checkout -b main
-
-# 添加更改（可选）
+# 添加所有
 git add .
-git commit -m "Initial commit on main branch"
 
-# 推送 main 分支到远程仓库并设置 upstream
+# 添加指定文件
+git add README.md
+
+# 添加文件修改说明
+git commit -m "提交文件的修改说明"
+
+# 推送到远程仓库
+git push origin main
+
+# 如果远程仓库中不存在main分支，你可以通过添加-u参数来将当前分支关联到远程仓库的main分支
 git push -u origin main
-
-# （在 GitHub 或其他平台上设置 main 为默认分支，具体步骤见上文）
-
-# 删除本地的 master 分支（如果需要）
-git branch -d master
-
-# 删除远程的 master 分支（如果需要）
-git push origin --delete master
 ```
 
-这样，你就成功创建并切换到了 `main` 分支，并可以将其设置为默认分支。
