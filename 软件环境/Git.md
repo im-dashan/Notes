@@ -143,6 +143,9 @@ git init
 # 添加远程仓库
 git remote add origin https://github.com/yourusername/your-repository.git
 
+# 查看账号配置
+git config --global --list
+
 # 检查本地分支
 git branch
 
