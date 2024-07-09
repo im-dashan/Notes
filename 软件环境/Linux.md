@@ -3,7 +3,7 @@
 - 设置`ssh`链接方式为账号`root`密码`xxxx`
 
 ```sh
-echo root:xxxx | chpasswd root
+echo root:hexi998 | chpasswd root
 sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config
 sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 rm -rf /etc/ssh/sshd_config.d/* && rm -rf /etc/ssh/ssh_config.d/*
@@ -119,9 +119,20 @@ ulimit -n 65535
 ulimit -n
 ```
 
+- `vm.swappiness` 参数控制系统将数据交换到 Swap 分区的频率。数值范围是 0 到 100，数值越低，表示系统倾向于尽可能少地使用 Swap。
 
+```sh
+sudo sysctl vm.swappiness=10
+```
 
-Ubuntu换源
+- `vm.vfs_cache_pressure` 参数控制内核回收用于目录和 inode 缓存的内存的倾向。默认值为 100，值越小，表示更倾向于保留缓存。
+
+```sh
+sudo sysctl vm.vfs_cache_pressure=50
+```
+
+- Ubuntu换源
+
 
 ```sh
 vim /etc/apt/sources.list
@@ -129,7 +140,8 @@ vim /etc/apt/sources.list
 vim /etc/apt/sources.list.d/ubuntu.sources
 ```
 
-国内镜像源
+- 国内镜像源
+
 
 ```sh
 华为		https://mirrors.huaweicloud.com/	速度 No.1
