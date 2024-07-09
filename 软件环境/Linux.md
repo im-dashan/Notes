@@ -44,24 +44,43 @@ sudo certbot renew
 - `firewalld`防火墙命令
 
 ```sh
-#安装防火墙
+# 安装防火墙
 sudo apt install firewalld
 
-#开放tcp/80端口
+# 开放tcp/80端口
+# 默认区域
+sudo firewall-cmd --permanent --add-port=80/tcp
+
+# 指定public区域
 sudo firewall-cmd --zone=public --permanent --add-port=80/tcp
 
-#删除tcp/80端口
-sudo firewall-cmd --zone=public --remove-port=80/tcp
+# 删除tcp/80端口
+# 默认区域
+sudo firewall-cmd --permanent --remove-port=80/tcp
 
-#使配置失效
+# 指定public区域
+sudo firewall-cmd --zone=public --permanent --remove-port=80/tcp
+
+# 重新加载防火墙配置
 sudo firewall-cmd --reload
 
-#开启服务
-systemctl start firewalld.service
+# 开启 firewalld 服务
+sudo systemctl start firewalld
 
-#设置开机启动
-systemctl enable firewalld.service
-systemctl status firewalld.service
+# 关闭 firewalld 服务
+sudo systemctl stop firewalld
+
+# 开启 firewalld 服务自启动
+sudo systemctl enable firewalld
+
+# 关闭 firewalld 服务自启动
+sudo systemctl disable firewalld
+
+# 查看 firewalld 服务当前状态
+sudo systemctl status firewalld
+
+# 查看当前防火墙开放的端口
+sudo firewall-cmd --list-ports
 
 #错误解决
 sudo apt-get install dbus
@@ -119,5 +138,4 @@ vim /etc/apt/sources.list.d/ubuntu.sources
 网易		https://mirrors.163.com/		速度 No.4
 中科大		https://mirrors.ustc.edu.cn/		速度 No.5
 ```
-
 
