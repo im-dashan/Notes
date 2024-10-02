@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://iasmr.org/i"><img width="100px" alt="logo" src="https://gitlab.com/mni.dashan/Notes/-/raw/main/Other/image/asmr.svg"/></a>
+  <a href="https://iasmr.org"><img width="100px" alt="logo" src="https://image.oneds.org/asmr.svg"/></a>
   <p>🎵欢迎来到ASMR 助眠频道，请佩戴好耳机！</p>
 <style>
     .badge {
