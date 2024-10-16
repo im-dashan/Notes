@@ -25,7 +25,7 @@
     }
 </style>
 <div>
-    <a href="https://iasmr.org/">
+    <a href="https://cors.oneds.org/im-dashan/Notes/refs/heads/main/Other/text/Release.md">
         <div class="badge">
             <div class="color">更新日志</div>
             <div class="color1">2024/10/16</div>
