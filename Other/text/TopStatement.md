@@ -27,8 +27,8 @@
 <div>
     <a href="https://iasmr.org/">
         <div class="badge">
-            <div class="color">访问量</div>
-            <div class="color1">7.4M</div>
+            <div class="color">更新日志</div>
+            <div class="color1">2024/10/16</div>
         </div>
     </a>
     <a href="https://iasmr.org/">
