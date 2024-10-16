@@ -52,26 +52,6 @@
     }
 </style>
 <div>
-    <a href="https://iasmr.org/">
-        <div class="badge">
-            <div class="color">访问量</div>
-            <div class="color1">7.4M</div>
-        </div>
-    </a>
-    <a href="https://iasmr.org/">
-        <div class="badge">
-            <div class="color">License</div>
-            <div class="color2">MIT</div>
-        </div>
-    </a>
-    <a href="https://gitlab.com/mni.dashan/Notes/-/raw/main/Other/text/update.md">
-        <div class="badge">
-            <div class="color">更新内容（点这里）</div>
-            <div class="color3">2024/09/27</div>
-        </div>
-    </a>
-</div>
-<div>
     <a href="">
         <div class="badge">
             <div class="color">网站正常运行中</div>
@@ -88,12 +68,6 @@
         <div class="badge">
             <div class="color">会员账号权益</div>
             <div class="color6">9大权益</div>
-        </div>
-    </a>
-    <a href="mailto:asmr@oneds.org?subject=主题（请修改）&body=这里是邮件正文（请修改）">
-        <div class="badge">
-            <div class="color">Mail</div>
-            <div class="color7">asmr@oneds.org</div>
         </div>
     </a>
 </div>
