@@ -16,37 +16,17 @@
         padding: 4px 6px;
     }
     .color1 {
-        background-color: #4DC71F;
-        color: white;
-        padding: 4px 6px;
-    }
-    .color2 {
-        background-color: #F48041;
-        color: white;
-        padding: 4px 6px;
-    }
-    .color3 {
-        background-color: #1080C2;
-        color: white;
-        padding: 4px 6px;
-    }
-    .color4 {
         background-color: #50B87C;
         color: white;
         padding: 4px 6px;
     }
-    .color5 {
+    .color2 {
         background-color: #9E7DE1;
         color: white;
         padding: 4px 6px;
     }
-    .color6 {
+    .color3 {
         background-color: #DA8035;
-        color: white;
-        padding: 4px 6px;
-    }
-    .color7 {
-        background-color: #ED7474;
         color: white;
         padding: 4px 6px;
     }
@@ -55,19 +35,19 @@
     <a href="">
         <div class="badge">
             <div class="color">网站正常运行中</div>
-            <div class="color4">2024/09/29维护完成</div>
+            <div class="color1">2024/09/29维护完成</div>
         </div>
     </a>
     <a href="https://iasmr.org/">
         <div class="badge">
             <div class="color">License</div>
-            <div class="color5">MIT</div>
+            <div class="color2">MIT</div>
         </div>
     </a>
     <a href="https://iasmr.org/">
         <div class="badge">
             <div class="color">会员账号权益</div>
-            <div class="color6">9大权益</div>
+            <div class="color3">9大权益</div>
         </div>
     </a>
 </div>
