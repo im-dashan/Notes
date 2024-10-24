@@ -63,36 +63,7 @@
 
 ## 发送邮件获得账号?
 
-<div>
-<style>
-    .badge {
-        display: inline-flex;
-        border-radius: 10px;
-        font-family: Arial, sans-serif;
-        font-size: 12px;
-        overflow: hidden;
-        margin: 5px;
-    }
-    .color {
-        background-color: #5C5C5C;
-        color: white;
-        padding: 8px 12px;
-    }
-    .color1 {
-        background-color: #4DC71F;
-        color: white;
-        padding: 8px 12px;
-    }
-</style>
-<div>
-    <a href="mailto:asmr@oneds.org?subject=你好&body=这是一封测试邮件">
-        <div class="badge">
-            <div class="color">有问题？我们一起解决</div>
-            <div class="color1">asmr@oneds.org</div>
-        </div>
-    </a>
-</div>
-</div>
+
 
 <br>
 
