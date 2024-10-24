@@ -40,18 +40,19 @@
     </a>
     <a href="https://iasmr.org/">
         <div class="badge">
-            <div class="color">License</div>
-            <div class="color2">MIT</div>
+            <div class="color">获取账号解锁资源</div>
+            <div class="color2">为什么？</div>
         </div>
     </a>
     <a href="https://iasmr.org/">
         <div class="badge">
-            <div class="color">会员账号权益</div>
-            <div class="color3">9大权益</div>
+            <div class="color">如何获取账号？</div>
+            <div class="color3">点这里</div>
         </div>
     </a>
 </div>
 </div>
+
 
 
 
@@ -61,9 +62,9 @@
 
 ---
 
-## 发送邮件获得账号?
+## 如何获得账号?
 
-
+#### 发送邮件至：[asmr@oneds.org](mailto:asmr@oneds.org?subject=创建账号&body=创建账号)
 
 <br>
 
