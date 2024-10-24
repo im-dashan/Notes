@@ -61,17 +61,40 @@
 
 ---
 
-## 如何获得账号?
+## 发送邮件获得账号?
 
- 请发送邮件至：**asmr@oneds.org**
+<div>
+<style>
+    .badge {
+        display: inline-flex;
+        border-radius: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        overflow: hidden;
+        margin: 5px;
+    }
+    .color {
+        background-color: #5C5C5C;
+        color: white;
+        padding: 8px 12px;
+    }
+    .color1 {
+        background-color: #4DC71F;
+        color: white;
+        padding: 8px 12px;
+    }
+</style>
+<div>
+    <a href="mailto:asmr@oneds.org?subject=你好&body=这是一封测试邮件">
+        <div class="badge">
+            <div class="color">有问题？我们一起解决</div>
+            <div class="color1">asmr@oneds.org</div>
+        </div>
+    </a>
+</div>
+</div>
 
 <br>
-
-#### ￥128开通账号永久
-
-会员功能大更新，会员享受cdn加速，所有资源包括视频播放不再卡顿
-
-
 
 | 免费用户（无需） | vip用户（账号） | svip用户（账号） |
 | ---------------- | --------------- | ---------------- |
