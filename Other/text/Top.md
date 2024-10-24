@@ -33,7 +33,7 @@
     </a>
     <a href="https://cors.oneds.org/im-dashan/Notes/refs/heads/main/Other/text/Release.md">
         <div class="badge">
-            <div class="color">维护日志</div>
+            <div class="color">网站维护日志</div>
             <div class="color2">稳定运行中...</div>
         </div>
     </a>
