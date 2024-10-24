@@ -38,7 +38,7 @@
             <div class="color1">asmr@oneds.org</div>
         </div>
     </a>
-    <a href="https://iasmr.org/">
+    <a href="https://cors.oneds.org/im-dashan/Notes/refs/heads/main/Other/text/About.md">
         <div class="badge">
             <div class="color">获取账号解锁资源</div>
             <div class="color2">为什么？</div>
