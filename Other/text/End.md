@@ -32,10 +32,10 @@
     }
 </style>
 <div>
-    <a href="">
+    <a href="mailto:asmr@oneds.org?subject=你好&body=这是一封测试邮件">
         <div class="badge">
-            <div class="color">网站正常运行中</div>
-            <div class="color1">2024/09/29维护完成</div>
+            <div class="color">有问题？我们一起解决</div>
+            <div class="color1">asmr@oneds.org</div>
         </div>
     </a>
     <a href="https://iasmr.org/">
