@@ -66,7 +66,7 @@
 
 #### 发送邮件至：[asmr@oneds.org](mailto:asmr@oneds.org?subject=创建账号&body=创建账号)
 
-> 国庆节活动时间11.10到11.13截止
+> 双十一活动时间11.10到11.13截止
 >
 > vip限时￥68 ，vvip限时￥78
 >
