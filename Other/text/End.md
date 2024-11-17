@@ -64,7 +64,9 @@
 
 ## 如何获得账号?
 
-#### 发送邮件至：[asmr@oneds.org](mailto:asmr@oneds.org?subject=创建账号&body=创建账号)
+#### 发送邮件至：
+
+>[asmr@oneds.org](mailto:asmr@oneds.org?subject=创建账号&body=创建账号)
 
 <details>
   <summary style="cursor:pointer;">详情（点击展开）</summary>
@@ -79,7 +81,7 @@
 
 ## 用户权限&价格？
 
-#### 限时活动
+#### 限时活动：
 
 > 暂无...
 
