@@ -84,7 +84,7 @@
 
 
 <details>
-  <summary>点击展开</summary>
+  <summary style="font-size:20px; color:blue; cursor:pointer;">点击展开</summary>
 
 | 免费用户（无需） | vip用户（账号） | vvip用户（账号） |
 | ---------------- | --------------- | ---------------- |
@@ -94,16 +94,5 @@
 | ✖资源加速        | ✔资源加速       | ✔资源加速        |
 | ✖WebDav          | ✖WebDav         | ✔WebDav          |
 | **¥ 0**          | **¥ 98**        | **￥128**        |
-
-</details>
-
-
-
-<details>
-  <summary>点击展开表格</summary>
-
-| 列1   | 列2   | 列3   |
-| ----- | ----- | ----- |
-| 内容1 | 内容2 | 内容3 |
 
 </details>
