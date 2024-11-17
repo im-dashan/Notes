@@ -64,7 +64,15 @@
 
 ## 如何获得账号?
 
-#### 发送邮件至：[asmr@oneds.org](mailto:asmr@oneds.org?subject=创建账号&body=创建账号)
+#### >发送邮件至：[asmr@oneds.org](mailto:asmr@oneds.org?subject=创建账号&body=创建账号)
+
+<details>
+  <summary style="cursor:pointer;">详情（点击展开）</summary>
+> 注意事项：
+>
+> 请不要使用`仅允许特定域名的邮件` `仅接收白名单用户的邮件`的邮箱地址发送邮件，否则你可能收不到邮件回信！
+
+</details>
 
 <br>
 
