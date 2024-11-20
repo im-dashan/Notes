@@ -69,10 +69,9 @@
 >[asmr@oneds.org](mailto:asmr@oneds.org?subject=创建账号&body=创建账号)
 
 <details>
-  <summary style="cursor:pointer;">详情（点击展开）</summary>
+  <summary style="cursor:pointer;">⚠️注意事项（点击展开）</summary>
 
-> 注意事项：
->
+
 > 请不要使用`仅允许特定域名` `仅白名单用户`接收邮件的邮箱地址发送邮件！
 >
 > 如果未及时收到回件可能较忙&或者检查垃圾邮件;
@@ -90,7 +89,8 @@
 > 暂无...
 
 <details>
-  <summary style="cursor:pointer;">详情（点击展开）</summary>
+  <summary style="cursor:pointer;">💰价格详情（点击展开）</summary>
+
 
 | 免费用户（无需） | vip用户（账号） | vvip用户（账号） |
 | ---------------- | --------------- | ---------------- |
