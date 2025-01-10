@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://iasmr.org"><img width="100px" alt="logo" src="https://image.xxvpn.xyz/asmr.svg"/></a>
+  <a href="https://iasmr.org"><img width="100px" alt="logo" src="https://image.yyds.cam/asmr.svg"/></a>
   <p>🎵欢迎来到ASMR 助眠频道，请佩戴好耳机！</p>
 <style>
     .badge {
@@ -38,7 +38,7 @@
             <div class="color1">asmr@oneds.org</div>
         </div>
     </a>
-    <a href="https://cors.xxvpn.xyz/im-dashan/Notes/refs/heads/main/Other/text/About.md">
+    <a href="https://cors.yyds.cam/im-dashan/Notes/refs/heads/main/Other/text/About.md">
         <div class="badge">
             <div class="color">获取账号解锁资源</div>
             <div class="color2">为什么？</div>
