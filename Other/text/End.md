@@ -95,7 +95,7 @@
 
 
 <details>
-  <summary style="cursor:pointer;">VVIP ￥128.00（点击展开详情）</summary>
+  <summary style="cursor:pointer;">VVIP ￥239.00（点击展开详情）</summary>
 > 包含VIP的全部内容以及功能
 > ...
 > 支持WebDAV，FTP挂载使用
