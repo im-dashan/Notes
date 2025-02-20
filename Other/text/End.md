@@ -89,8 +89,8 @@
   <summary style="cursor:pointer;">VIP ￥128.00（点击展开详情）</summary>
 
 
-> 资源CDN服务器播放加速
 > VIP内容的视频，音频
+> 资源CDN服务器播放加速
 > 支持AList协议的播放器挂载使用
 
 </details>
