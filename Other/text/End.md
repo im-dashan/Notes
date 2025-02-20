@@ -89,7 +89,7 @@
   <summary style="cursor:pointer;">点击查看会员内容</summary>
 
 
-> VIP视频&音频会员内容
+> VIP视频&音频会员内容>
 > 资源CDN服务器播放加速
 > 支持AList协议的播放器挂载使用
 
