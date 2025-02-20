@@ -84,16 +84,35 @@
 
 ## 账号价格和权限？
 
-#### VIP ￥128.00
+<details>
+  <summary style="cursor:pointer;">VIP ￥128.00（点击展开）</summary>
+
+
 > VIP视频&音频会员内容
+> 
 > 资源CDN服务器播放加速
+> 
 > 支持AList协议的播放器挂载使用
 
-#### VVIP ￥239.00
+</details>
+
+<br>
+
+<details>
+  <summary style="cursor:pointer;">VVIP ￥239（点击展开）</summary>
+
+
 > 包含VIP的全部内容以及功能
+> 
 > ...
+> 
 > 支持WebDAV，FTP挂载使用
+> 
 > VVIP加密资源内容
+
+</details>
+
+<br>
 
 #### 活动：
 
