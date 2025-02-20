@@ -89,9 +89,9 @@
   <summary style="cursor:pointer;">VIP内容（点击查看）</summary>
 
 
-> VIP视频&音频会员内容
+> VIP会员音频&音频内容
 > 
-> 资源CDN服务器播放加速
+> CDN服务器加速资源播放
 > 
 > 支持AList协议的播放器挂载使用
 
@@ -104,11 +104,11 @@
   <summary style="cursor:pointer;">VVIP内容（点击查看）</summary>
 
 
-> 包含VIP的全部内容以及功能
-> 
-> 支持WebDAV，FTP挂载使用
-> 
 > VVIP加密资源内容
+> 
+> 支持WebDAV，FTP功能播放器挂载使用，全功能（包括以后更新功能）
+> 
+> 包含VIP的全部内容以及功能
 
 </details>
 
