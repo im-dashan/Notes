@@ -84,8 +84,9 @@
 
 ## 账号价格和权限？
 
+#### VIP ￥128.00（永久）
 <details>
-  <summary style="cursor:pointer;">VIP ￥128.00（点击展开）</summary>
+  <summary style="cursor:pointer;">点击查看会员内容</summary>
 
 
 > VIP视频&音频会员内容
@@ -98,8 +99,9 @@
 
 <br>
 
+#### VVIP ￥239.00（永久）
 <details>
-  <summary style="cursor:pointer;">VVIP ￥239（点击展开）</summary>
+  <summary style="cursor:pointer;">点击查看会员内容</summary>
 
 
 > 包含VIP的全部内容以及功能
