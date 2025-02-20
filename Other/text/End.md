@@ -85,28 +85,24 @@
 ## 账号价格和权限？
 
 #### 售价：
->VIP ￥128.00
 <details>
   <summary style="cursor:pointer;">VIP ￥128.00（点击展开详情）</summary>
-
-
-
-
+>资源CDN服务器播放加速
+>>VIP内容的视频，音频
+>支持AList协议的播放器挂载使用
 </details>
 
 
 
->VVIP ￥239.00
 <details>
   <summary style="cursor:pointer;">VVIP ￥128.00（点击展开详情）</summary>
-
-
->VIP会员126
->VVIP
-
+>包含VIP的全部内容以及功能
+>...
+>支持WebDAV，FTP挂载使用
+>VVIP加密资源内容
 </details>
 
 
 #### 活动：
 
-> 即将区分VIP和VVIP权限，VVIP限时128倒计时3天后，VVIP涨价
+> 即将区分VIP和VVIP权限，VVIP限时128倒计时3天后，VVIP将涨价
