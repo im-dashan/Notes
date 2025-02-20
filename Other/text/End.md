@@ -86,7 +86,7 @@
 
 #### VIP ￥128.00（永久）
 <details>
-  <summary style="cursor:pointer;">点击查看会员内容</summary>
+  <summary style="cursor:pointer;">VIP内容（点击查看）</summary>
 
 
 > VIP视频&音频会员内容
@@ -101,7 +101,7 @@
 
 #### VVIP ￥239.00（永久）
 <details>
-  <summary style="cursor:pointer;">点击查看会员内容</summary>
+  <summary style="cursor:pointer;">VVIP内容（点击查看）</summary>
 
 
 > 包含VIP的全部内容以及功能
