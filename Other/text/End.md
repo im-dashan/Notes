@@ -100,10 +100,12 @@
   <summary style="cursor:pointer;">VVIP ￥239.00（点击展开详情）</summary>
 
 
+<div style="display:inline-block;">
 > 包含VIP的全部内容以及功能
 > ...
 > 支持WebDAV，FTP挂载使用
 > VVIP加密资源内容
+</div>
 
 </details>
 
@@ -111,3 +113,15 @@
 #### 活动：
 
 > 即将区分VIP和VVIP权限，VVIP限时128倒计时3天后，VVIP将涨价
+> 
+
+
+<summary style="cursor:pointer;">VVIP ￥239.00（点击展开详情）</summary>
+
+<div style="display:inline-block;">
+> 包含VIP的全部内容以及功能
+> ...
+> 支持WebDAV，FTP挂载使用
+> VVIP加密资源内容
+</div>
+</details>
