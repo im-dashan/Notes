@@ -53,24 +53,16 @@
 </div>
 </div>
 
-
-
-
-
-
-
-
 ---
 
-## 如何购买账号?
+## 如何获取账号?
 
 #### 发送邮件至：
 
->[asmr@oneds.org](mailto:asmr@oneds.org?subject=创建账号&body=创建账号)
+> [asmr@oneds.org](mailto:asmr@oneds.org?subject=创建账号&body=创建账号)
 
 <details>
   <summary style="cursor:pointer;">发送邮件注意事项（点击展开）</summary>
-
 
 > 请不要使用`仅允许特定域名` `仅白名单用户`接收邮件的邮箱地址发送邮件！
 >
@@ -84,30 +76,30 @@
 
 ## 账号价格和权限？
 
-#### VIP ￥128.00（永久）
 <details>
   <summary style="cursor:pointer;">VIP内容（点击查看）</summary>
 
-
+> ￥98.00（永久）
+> 
 > VIP会员音频&音频内容
-> 
+>
 > CDN服务器加速资源播放
-> 
+>
 > 支持AList协议的播放器挂载使用
 
 </details>
 
 <br>
 
-#### VVIP ￥239.00（永久）
 <details>
   <summary style="cursor:pointer;">VVIP内容（点击查看）</summary>
 
-
+> ￥128.00（永久）
+> 
 > VVIP加密资源内容
-> 
+>
 > 支持WebDAV，FTP功能播放器挂载使用，全功能（包括以后更新功能）
-> 
+>
 > 包含VIP的全部内容以及功能
 
 </details>
@@ -116,4 +108,4 @@
 
 #### 限时活动：
 
- > 即将区分VIP和VVIP权限，VVIP限时128倒计时3天后，VVIP将涨价
+> 暂无...
