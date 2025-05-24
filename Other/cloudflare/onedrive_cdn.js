@@ -27,7 +27,7 @@ addEventListener('fetch', event => {
     }
   
     // 否则处理代理请求
-    const sharepointBaseUrl = "https://87808-my.sharepoint.com";
+    const sharepointBaseUrl = "https://oneids-my.sharepoint.com";
     const actualUrl = `${sharepointBaseUrl}${url.pathname}${url.search}${url.hash}`;
   
     // 使用修改后的 URL 创建新的请求
