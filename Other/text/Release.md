@@ -1,3 +1,6 @@
+2025/08/23
+更新openlist版本更新到v4.1.1
+
 2025/08/17
 更新Let's Encrypt SSL证书日期
 更新openlist版本更新到v4.1.0
