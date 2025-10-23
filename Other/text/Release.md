@@ -1,3 +1,10 @@
+2025/010/23
+更新openlist版本更新到v4.1.5
+回退nginx版本到1.28.0稳定主线版本
+更新openssl到3.6.0
+更新Let's Encrypt SSL证书日期
+更新http/3
+
 2025/08/23
 更新openlist版本更新到v4.1.1
 
