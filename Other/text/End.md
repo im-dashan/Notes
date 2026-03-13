@@ -61,7 +61,7 @@
 
 #### 发送邮件至：
 
-> [**asmr@oneds.org**](mailto:asmr@oneds.org?subject=创建账号&body=创建账号)
+> [**help@iasmr.org**](mailto:help@iasmr.org?subject=创建账号&body=创建账号)
 >
 > 请不要使用`仅允许特定域名` `仅白名单用户`接收邮件的邮箱地址发送邮件！
 >
