@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://iasmr.org"><img width="100px" alt="logo" src="https://image.iasmr.uk/asmr.svg"/></a>
+  <a href="https://www.iasmr.org"><img width="100px" alt="logo" src="https://image.iasmr.uk/asmr.svg"/></a>
   <p>🎵欢迎来到ASMR 助眠频道，请佩戴好耳机！</p>
 <style>
     .badge {
@@ -32,10 +32,10 @@
     }
 </style>
 <div>
-    <a href="mailto:asmr@oneds.org?subject=你好&body=这是一封测试邮件">
+    <a href="mailto:help@iasmr.org?subject=你好&body=这是一封测试邮件">
         <div class="badge">
             <div class="color">有问题？我们一起解决</div>
-            <div class="color1">asmr@oneds.org</div>
+            <div class="color1">help@iasmr.org</div>
         </div>
     </a>
     <a href="https://cors.iasmr.uk/im-dashan/Notes/refs/heads/main/Other/text/About.md">
@@ -44,7 +44,7 @@
             <div class="color2">为什么？</div>
         </div>
     </a>
-    <a href="https://iasmr.org/">
+    <a href="https://www.iasmr.org/">
         <div class="badge">
             <div class="color">如何获取账号？</div>
             <div class="color3">点这里</div>
