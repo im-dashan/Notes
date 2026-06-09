@@ -1,3 +1,8 @@
+2026/06/09
+更新nginx到1.30.2
+更新openssl到4.0.0
+更新Let's Encrypt SSL证书日期
+
 2025/010/23
 更新openlist版本更新到v4.1.5
 回退nginx版本到1.28.0稳定主线版本
