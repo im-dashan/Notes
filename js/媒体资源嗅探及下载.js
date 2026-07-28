@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         iOS视频嗅探器
+// @name         iOS视频嗅探及下载
 // @namespace    https://github.com/im-dashan
 // @version      1.0.0
-// @description  嗅探网页视频地址(m3u8/mp4/m4s/ts)
+// @description  嗅探网页中的 m3u8、mp4、m4s、ts 视频资源并复制下载地址
 // @author       Dashan
 // @match        *://*/*
 // @run-at       document-start
@@ -12,15 +12,19 @@
 (function () {
     "use strict";
 
-    const videoUrls = new Set();
+    console.log("[视频嗅探] 已启动");
 
 
-    // 判断视频链接
+    const urls = new Set();
+
+
+    // 判断是否视频地址
     function isVideo(url) {
 
         if (!url) return false;
 
         url = String(url);
+
 
         return (
             /\.(m3u8|mp4|m4s|ts|webm|mov|flv)(\?|$)/i.test(url)
@@ -36,19 +40,34 @@
     }
 
 
-    // 添加地址
+
+    // 保存视频地址
     function addUrl(url) {
 
         if (!url) return;
 
+
+        if (typeof url !== "string") {
+
+            try {
+
+                url = url.url || "";
+
+            } catch(e){
+
+                return;
+            }
+        }
+
+
         if (isVideo(url)) {
 
-            if (!videoUrls.has(url)) {
+            if (!urls.has(url)) {
 
-                videoUrls.add(url);
+                urls.add(url);
 
                 console.log(
-                    "[视频发现]",
+                    "[发现视频]",
                     url
                 );
             }
@@ -57,13 +76,16 @@
 
 
 
+
+
     /*
-    =====================
-    fetch监听
-    =====================
+     =========================
+     监听 fetch
+     =========================
     */
 
     const oldFetch = window.fetch;
+
 
     window.fetch = function () {
 
@@ -73,16 +95,22 @@
 
         } catch(e){}
 
-        return oldFetch.apply(this, arguments);
+
+        return oldFetch.apply(
+            this,
+            arguments
+        );
     };
 
 
 
 
+
+
     /*
-    =====================
-    XHR监听
-    =====================
+     =========================
+     监听 XHR
+     =========================
     */
 
 
@@ -93,11 +121,11 @@
     XMLHttpRequest.prototype.open =
     function(method,url){
 
-        try{
+        try {
 
             addUrl(url);
 
-        }catch(e){}
+        } catch(e){}
 
 
         return oldOpen.apply(
@@ -110,21 +138,68 @@
 
 
 
+
     /*
-    =====================
-    Performance监听
-    =====================
+     =========================
+     Performance资源扫描
+     =========================
     */
 
-    function scanPerformance(){
 
-        try{
+    function scanNetwork(){
+
+        try {
 
             performance
             .getEntriesByType("resource")
-            .forEach(item=>{
+            .forEach(function(item){
 
                 addUrl(item.name);
+
+            });
+
+
+        } catch(e){}
+
+    }
+
+
+
+
+
+
+
+    /*
+     =========================
+     video标签扫描
+     =========================
+    */
+
+
+    function scanVideo(){
+
+        try {
+
+
+            document
+            .querySelectorAll("video")
+            .forEach(function(video){
+
+
+                addUrl(video.src);
+
+                addUrl(video.currentSrc);
+
+
+
+                video
+                .querySelectorAll("source")
+                .forEach(function(source){
+
+                    addUrl(source.src);
+
+                });
+
 
             });
 
@@ -137,85 +212,95 @@
 
 
 
-    /*
-    =====================
-    video标签扫描
-    =====================
-    */
-
-    function scanVideo(){
-
-        document
-        .querySelectorAll("video")
-        .forEach(v=>{
-
-
-            addUrl(v.src);
-
-            addUrl(v.currentSrc);
-
-
-            v.querySelectorAll("source")
-            .forEach(s=>{
-
-                addUrl(s.src);
-
-            });
-
-
-        });
-
-    }
-
-
 
 
     /*
-    =====================
-    创建按钮
-    =====================
+     =========================
+     创建按钮
+     =========================
     */
 
 
     function createButton(){
 
-        if(document.getElementById(
-            "video-sniffer-btn"
-        ))
-        return;
 
+        if(
+            document.getElementById(
+                "video-sniffer-button"
+            )
+        ){
 
-        const btn=document.createElement("button");
-
-
-        btn.id="video-sniffer-btn";
-
-        btn.innerHTML="🎬 视频";
-
-
-        btn.style.position="fixed";
-        btn.style.right="20px";
-        btn.style.bottom="80px";
-        btn.style.zIndex="999999";
-        btn.style.padding="12px";
-        btn.style.background="#007aff";
-        btn.style.color="#fff";
-        btn.style.border="0";
-        btn.style.borderRadius="12px";
-        btn.style.fontSize="16px";
+            return;
+        }
 
 
 
-        btn.onclick=function(){
+        const btn =
+        document.createElement("div");
 
 
-            scanPerformance();
+
+        btn.id =
+        "video-sniffer-button";
+
+
+        btn.innerHTML =
+        "🎬 视频";
+
+
+
+        btn.style.position =
+        "fixed";
+
+
+        btn.style.right =
+        "20px";
+
+
+        btn.style.bottom =
+        "80px";
+
+
+        btn.style.zIndex =
+        "999999";
+
+
+        btn.style.background =
+        "#007aff";
+
+
+        btn.style.color =
+        "white";
+
+
+        btn.style.padding =
+        "12px 16px";
+
+
+        btn.style.borderRadius =
+        "12px";
+
+
+        btn.style.fontSize =
+        "16px";
+
+
+        btn.style.fontWeight =
+        "bold";
+
+
+
+        btn.onclick =
+        function(){
+
+
+            scanNetwork();
 
             scanVideo();
 
 
 
-            if(videoUrls.size===0){
+            if(urls.size === 0){
 
                 alert(
                     "没有发现视频地址"
@@ -226,37 +311,49 @@
 
 
 
-            let text="";
+
+            let list =
+            Array.from(urls);
 
 
-            [...videoUrls]
-            .forEach((u,i)=>{
+
+            let text = "";
+
+
+
+            list.forEach(function(url,index){
 
                 text +=
-                (i+1)+
-                ". "+
-                u+
+                (index + 1)
+                +
+                ". "
+                +
+                url
+                +
                 "\n\n";
 
             });
 
 
 
-            let index =
+            let num =
             prompt(
-                text+
+                text +
                 "\n输入编号复制链接"
             );
 
 
 
-            if(!index)
+            if(!num)
                 return;
 
 
+
             let url =
-            [...videoUrls]
-            [Number(index)-1];
+            list[
+                Number(num)-1
+            ];
+
 
 
             if(!url)
@@ -265,22 +362,31 @@
 
 
             // iOS兼容复制
-            const ta =
+
+            let textarea =
             document.createElement(
                 "textarea"
             );
 
-            ta.value=url;
 
-            document.body.appendChild(ta);
+            textarea.value =
+            url;
 
-            ta.select();
+
+            document.body.appendChild(
+                textarea
+            );
+
+
+            textarea.select();
+
 
             document.execCommand(
                 "copy"
             );
 
-            ta.remove();
+
+            textarea.remove();
 
 
 
@@ -288,7 +394,9 @@
                 "已复制视频地址"
             );
 
+
         };
+
 
 
 
@@ -301,20 +409,24 @@
 
 
 
+
+
     /*
-    =====================
-    等待页面
-    =====================
+     =========================
+     定时扫描
+     =========================
     */
 
 
-    setInterval(()=>{
+    setInterval(function(){
 
-        scanPerformance();
+
+        scanNetwork();
 
         scanVideo();
 
         createButton();
+
 
     },2000);
 
