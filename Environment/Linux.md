@@ -34,6 +34,9 @@ sudo certbot certonly --standalone
 #使用dns验证签发证书
 sudo certbot certonly --manual --preferred-challenges=dns -d iasmr.org -d '*.iasmr.org'
 
+#查看证书详情
+sudo certbot certificates
+
 #使用 Web 服务器的文档根目录（即 Webroot 目录）来完成验证，适用于已经运行的 Web 服务器
 sudo certbot certonly --webroot
 
