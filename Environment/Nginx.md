@@ -30,6 +30,10 @@ cd xxxx
 sudo apt-get install build-essential libpcre3 libpcre3-dev zlib1g zlib1g-dev libssl-dev
 ```
 
+```sh
+apt-get install build-essential libpcre2-dev zlib1g zlib1g-dev libssl-dev
+```
+
 `openssl`编译安装，默认安装到`/usr/local/openssl`文件夹下
 
 ```sh
