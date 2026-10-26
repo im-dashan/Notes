@@ -110,6 +110,14 @@ dpkg --get-selections|grep linux
 sudo apt-get purge
 ```
 
+```sh
+列出真正残留配置的旧内核
+dpkg -l 'linux-image-*' 'linux-modules-*' 'linux-headers-*' | awk '$1=="rc" {print $2}'
+
+只清除这些旧内核的残留配置
+dpkg -l 'linux-image-*' 'linux-modules-*' 'linux-headers-*' | awk '$1=="rc" {print $2}' | xargs -r dpkg --purge
+```
+
 - `linux`最大打开文件数量
 
 ```sh
